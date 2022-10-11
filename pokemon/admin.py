@@ -10,7 +10,7 @@ class PokemonAdmin(admin.ModelAdmin):
    
     fieldsets = (
      ('', {
-            'fields': ('name', 'type', 'hp', 'active', 'created_at', 'models_at',),
+            'fields': ('name', 'type', 'hp', 'active'),
         }),
         
     ('localization', {
