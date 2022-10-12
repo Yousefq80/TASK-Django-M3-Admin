@@ -9,7 +9,7 @@ class PokemonAdmin(admin.ModelAdmin):
     list_display_links = ("id", "name",)
    
     fieldsets = (
-     ('', {
+     ('Standard info', {
             'fields': ('name', 'type', 'hp', 'active'),
         }),
         
