@@ -1,4 +1,5 @@
 from email.policy import default
+from enum import auto
 from random import choices
 from time import timezone
 from datetime import datetime
@@ -21,5 +22,6 @@ class Pokemon(models.Model):
  name_fr= models.CharField(max_length=30,default="",blank=True) 
  name_ar=models.CharField(max_length=30,default="",blank=True)
  name_jp=models.CharField(max_length=30,default="",blank=True)
- created_at=models.DateTimeField(default=datetime.now(), blank=True)
+ created_at=models.DateTimeField(auto_now_add=True, blank=True)
  modified_at=models.DateTimeField(auto_now=True)
+#  default=datetime.now()
